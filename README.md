@@ -5,23 +5,24 @@ platform financing and commercializing solar generation and behind-the-meter sto
 and Latin America.
 
 🔗 **Live:** https://lopezpalacios.github.io/newman-brand-ui/
-🎨 **Brandbook:** [`brandbook.html`](./brandbook.html) (V1.0 — 2026)
-📐 **Guidelines:** [`BRAND.md`](./BRAND.md) · [`DESIGN.md`](./DESIGN.md) (Google Stitch format, machine-readable)
+🎨 **Brandbook:** [`docs/brandbook.html`](./docs/brandbook.html) (V1.0 — 2026)
+📐 **Guidelines:** [`docs/BRAND.md`](./docs/BRAND.md) · [`docs/DESIGN.md`](./docs/DESIGN.md) (Google Stitch format, machine-readable)
 
-## Contents
-| File | What |
-|------|------|
-| `index.html` | Reference landing page using the full kit |
-| `newman.css` | Tokens + accessible components (vanilla CSS) |
-| `newman.js` | Nav, ARIA tabs, focus-trapped modal, toast, reveal, accordion, count-up, form validation (zero deps) |
-| `brandbook.html` | The 12-section visual + verbal identity book |
-| `BRAND.md` | Quick-reference brand rules |
+## Structure
+```
+index.html              # landing page (root — required by GitHub Pages)
+assets/css/newman.css   # tokens + accessible components (vanilla CSS)
+assets/js/newman.js     # nav, ARIA tabs, focus-trap modal, toast, reveal, accordion, count-up, validation
+docs/                   # brandbook.html · BRAND.md · DESIGN.md (Stitch format)
+prompts/                # reusable agent prompts (devibe-review.md)
+.github/workflows/      # GitHub Pages deploy
+```
 
 ## Run locally
 ```bash
-python3 -m http.server 8000   # then open http://localhost:8000
+npm start          # → http://localhost:8000   (python3 -m http.server)
 ```
-No build step. No dependencies. Plain HTML/CSS/JS.
+No build step. No runtime dependencies. Plain HTML/CSS/JS. See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
 ## Design notes
 Committee-audited for a 10/10 bar, then refined with **T1 Energy restraint lessons** (Newman colors kept):

@@ -1,0 +1,23 @@
+{
+  "name": "newman-brand-ui",
+  "version": "2.0.0",
+  "description": "Newman · Soluciones en Energía — brand guidelines + dependency-free vanilla UI kit.",
+  "homepage": "https://lopezpalacios.github.io/newman-brand-ui/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lopezpalacios/newman-brand-ui.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "format": "prettier --write \"**/*.{html,css,js,md,json}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,md,json}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.0"
+  },
+  "keywords": ["newman", "brand", "ui-kit", "css", "design-system", "vanilla-js"]
+}
