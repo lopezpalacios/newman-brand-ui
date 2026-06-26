@@ -4,7 +4,7 @@ Brand identity system and dependency-free UI kit for **Newman · Soluciones en E
 platform financing and commercializing solar generation and behind-the-meter storage across Mexico
 and Latin America.
 
-🔗 **Live:** _set after GitHub Pages deploy_
+🔗 **Live:** https://lopezpalacios.github.io/newman-brand-ui/
 🎨 **Brandbook:** [`brandbook.html`](./brandbook.html) (V1.0 — 2026)
 📐 **Guidelines:** [`BRAND.md`](./BRAND.md)
 
