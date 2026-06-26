@@ -93,6 +93,7 @@ p{color:var(--graphite);max-width:64ch;font-size:var(--text-body)}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 .grid-4{grid-template-columns:repeat(4,1fr)}
 .center{text-align:center}.center .section-rule{margin-inline:auto}.center p{margin-inline:auto}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s-48);align-items:end}
 
 /* ---------- nav: floating dark pill (T1) ---------- */
 .nav{position:sticky;top:var(--s-16);z-index:50;margin-inline:auto;max-width:var(--maxw);
@@ -147,6 +148,13 @@ p{color:var(--graphite);max-width:64ch;font-size:var(--text-body)}
 /* ---------- media: full-bleed porthole, 64px radius, no frame/overlay ---------- */
 .media{border-radius:var(--r-media);overflow:hidden;background:#1a1a1f;aspect-ratio:4/3}
 .media img{width:100%;height:100%;object-fit:cover}
+/* intentional blueprint placeholder — a deliberate technical motif, not a flat color block */
+.media.blueprint{display:grid;place-items:center;background:
+  linear-gradient(0deg,rgba(184,14,101,.06),rgba(184,14,101,.06)),
+  repeating-linear-gradient(0deg,transparent 0 23px,rgba(185,185,194,.10) 23px 24px),
+  repeating-linear-gradient(90deg,transparent 0 23px,rgba(185,185,194,.10) 23px 24px),
+  var(--ink)}
+.media.blueprint .wm{width:38%;opacity:.9}
 /* optional captioned photo (kept for content tiles) */
 .photo{position:relative;border-radius:var(--r-media);overflow:hidden;color:#fff;min-height:240px;background:#1a1a1f}
 .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,27,77,.2),rgba(10,10,12,.85))}
@@ -209,7 +217,8 @@ p{color:var(--graphite);max-width:64ch;font-size:var(--text-body)}
 
 /* ---------- responsive ---------- */
 @media (max-width:860px){
-  .grid-2,.grid-3,.grid-4,.stats{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4,.stats,.split{grid-template-columns:1fr}
+  .split{gap:var(--s-16);align-items:start}
   .nav .links{position:absolute;top:100%;left:0;right:0;margin-top:var(--s-8);flex-direction:column;align-items:flex-start;gap:0;background:var(--ink);border-radius:var(--r-nav);padding:var(--s-8) 0;display:none}
   .nav.open .links{display:flex}
   .nav .links a{padding:14px clamp(20px,5vw,24px);width:100%;opacity:1}

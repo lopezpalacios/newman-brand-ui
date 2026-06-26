@@ -6,7 +6,7 @@ and Latin America.
 
 🔗 **Live:** https://lopezpalacios.github.io/newman-brand-ui/
 🎨 **Brandbook:** [`brandbook.html`](./brandbook.html) (V1.0 — 2026)
-📐 **Guidelines:** [`BRAND.md`](./BRAND.md)
+📐 **Guidelines:** [`BRAND.md`](./BRAND.md) · [`DESIGN.md`](./DESIGN.md) (Google Stitch format, machine-readable)
 
 ## Contents
 | File | What |
