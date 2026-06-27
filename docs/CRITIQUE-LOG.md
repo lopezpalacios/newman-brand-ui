@@ -3,8 +3,8 @@
 Running record of the `prompts/iconic-loop.md` loop. One legendary-designer persona per
 iteration → one critique → one shipped improvement → self-score.
 
-**Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → **Massimo Vignelli (next)** →
-Paula Scher → Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
+**Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli →
+**Paula Scher (next)** → Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -78,3 +78,27 @@ the same everywhere. Timelessness is the last 10%: nothing here should feel of-t
 
 **Next (Massimo Vignelli):** is the geometry truly disciplined? Grid, proportion, the wordmark's
 type — is it Helvetica-grade timeless, or are there arbitrary decisions to remove?
+
+---
+
+## Iteration 4 — Massimo Vignelli
+**Doctrine:** "The grid is the underwear of the book. Discipline. A handful of timeless
+typefaces. If you can design one thing, you can design everything — through the system."
+
+**Critique:** The page had a max-width but **no published grid** — the single most Vignelli
+omission. A guidelines doc that doesn't show its own grid asks implementers to place by eye,
+which guarantees drift. The type system was shown as specimens but never stated as a *limited
+canon* (how many families, how many weights, what measure).
+
+**Shipped:** A **Grid & measure** block — a visible 12-column grid (1200px, 24px gutters) plus
+the stated discipline: two typefaces, four weights, one body measure (≤64ch), nothing placed by
+eye. New `.grid-cols` component.
+
+**Self-score:** Reductive 8 · Memorable 8 · Scalable 9 · Mono+Inverted 9 · Distinct 8 ·
+Cross-cultural 9 · Timeless 8 · Systematic 10 · Flexible 9.  **Avg ≈ 8.7.**
+**Vignelli's verdict:** "Now it has underwear. Systematic is excellent. The one arbitrary thing
+left is the display typeface — Montserrat is competent but not timeless. That is the open
+decision (flagged for the client). Everything else is disciplined."
+
+**Next (Paula Scher):** is the wordmark doing enough? Type as image — could the identity be
+bolder, more typographically expressive, more ownable at environmental scale?
