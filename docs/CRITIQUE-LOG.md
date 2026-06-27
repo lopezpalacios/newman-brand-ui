@@ -3,7 +3,7 @@
 Running record of the `prompts/iconic-loop.md` loop. One legendary-designer persona per
 iteration → one critique → one shipped improvement → self-score.
 
-**Persona rotation:** Paul Rand → Rob Janoff → **Saul Bass (next)** → Massimo Vignelli →
+**Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → **Massimo Vignelli (next)** →
 Paula Scher → Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
@@ -56,3 +56,25 @@ next, make the *motion/idea* unmistakable so no one mistakes it for generic stri
 
 **Next (Saul Bass):** reduce to the boldest possible symbol; is there one unforgettable gesture?
 Could the mark imply motion/upward momentum even more decisively?
+
+---
+
+## Iteration 3 — Saul Bass
+**Doctrine:** "Symbolize and summarize. A logo is identity in motion — make one gesture
+unforgettable." (Bass invented the animated corporate identity: AT&T, United, Bell.)
+
+**Critique:** A static mark stops at the page; Bass-era brands defined how the symbol *moves*.
+Newman's diagonal bars beg for motion — they already imply descent/momentum — but the system
+had no canonical animation, so every implementer would invent their own and dilute the gesture.
+
+**Shipped:** A **Logo in motion** spec — the five bars rise and assemble in sequence (longest
+first, ~0.6s, 90ms stagger, ease-out) as the signature splash/intro/loading gesture; build-only,
+never disassemble; `prefers-reduced-motion` shows the formed mark. New `.logo-motion` component.
+
+**Self-score:** Reductive 8 · Memorable 8 · Scalable 9 · Mono+Inverted 9 · Distinct 8 ·
+Cross-cultural 9 · Timeless 7 · Systematic 9 · Flexible 9.  **Avg ≈ 8.4.**
+**Bass's verdict:** "The gesture is right — energy coming online. Lock the timing as law so it's
+the same everywhere. Timelessness is the last 10%: nothing here should feel of-the-moment."
+
+**Next (Massimo Vignelli):** is the geometry truly disciplined? Grid, proportion, the wordmark's
+type — is it Helvetica-grade timeless, or are there arbitrary decisions to remove?
