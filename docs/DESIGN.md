@@ -7,7 +7,7 @@ description: >
   language (v3): a light, warm-lilac canvas with deep-aubergine text and ONE solid
   brand purple (#621558) as accent (also the floating nav pill) — no chrome gradients.
   Navy carries headlines and the footer anchor. The navy→magenta gradient survives ONLY
-  inside the logo isotype (the registered mark). Whisper-light Montserrat display type
+  inside the logo isotype (the registered mark). Whisper-light Space Grotesk display type
   feels architectural; the 5-bar isotype and a 4px magenta square label carry the
   brand. Flat and shadowless — hierarchy from tonal layering and spacing, never elevation.
 colors:
@@ -28,19 +28,19 @@ colors:
   logo-gradient: "linear-gradient(105deg, #191B4D, #3A1852, #981060, #B80E65)"  # SVG isotype ONLY
 typography:
   display:
-    fontFamily: "Montserrat, 'Arial Narrow', Arial, sans-serif"
+    fontFamily: "Space Grotesk, 'Arial Narrow', Arial, sans-serif"
     fontSize: "64px"
     fontWeight: 300
     lineHeight: 1.02
     letterSpacing: "0.01em"
   heading:
-    fontFamily: "Montserrat, sans-serif"
+    fontFamily: "Space Grotesk, sans-serif"
     fontSize: "32px"
     fontWeight: 500
     lineHeight: 1.15
     letterSpacing: "0.005em"
   subheading:
-    fontFamily: "Montserrat, sans-serif"
+    fontFamily: "Space Grotesk, sans-serif"
     fontSize: "22px"
     fontWeight: 500
     lineHeight: 1.3
@@ -55,7 +55,7 @@ typography:
     fontWeight: 400
     lineHeight: 1.4
   label:
-    fontFamily: "Montserrat, sans-serif"
+    fontFamily: "Space Grotesk, sans-serif"
     fontSize: "12px"
     fontWeight: 400
     lineHeight: 1.3
@@ -164,23 +164,23 @@ color reads as designed; gradient chrome reads as vibe-coded.
 
 ## Typography
 
-**Montserrat** carries all display/headline/label use; **Inter** handles body. The single
+**Space Grotesk** carries all display/headline/label use; **Inter** handles body. The single
 most distinctive choice is **weight 300 at display sizes** — the whisper-light headline
 makes industrial copy read as *etched specification* rather than shout. Never set display
 in 600/700. Open tracking `0.01em` keeps the light weight from feeling cramped.
 
 | Role | Family | Size | Weight | Line | Tracking |
 |------|--------|------|--------|------|----------|
-| display | Montserrat | clamp(40–64px) | 300 | 1.02 | 0.01em |
-| heading | Montserrat | 32px | 500 | 1.15 | 0.005em |
-| subheading | Montserrat | 22px | 500 | 1.3 | — |
+| display | Space Grotesk | clamp(40–64px) | 300 | 1.02 | 0.01em |
+| heading | Space Grotesk | 32px | 500 | 1.15 | 0.005em |
+| subheading | Space Grotesk | 22px | 500 | 1.3 | — |
 | body | Inter | 16px | 400 | 1.6 | — |
 | body-sm | Inter | 14px | 400 | 1.4 | — |
-| label | Montserrat | 12px | 400 | 1.3 | 0.14em, UPPERCASE |
+| label | Space Grotesk | 12px | 400 | 1.3 | 0.14em, UPPERCASE |
 
 Labels are uppercase, tracked, and **prefixed by a 4–6px solid magenta square** — never a
 bullet, dot, icon, or emoji. Body stays sentence case with default tracking. Never
-Montserrat below 12px; never tint body text magenta.
+Space Grotesk below 12px; never tint body text magenta.
 
 ## Layout
 
@@ -215,7 +215,7 @@ is the one angular motif; everything else is soft.
 - **Ghost button** — transparent, 1.5px `accent` border, `accent` text, same 100px geometry
   — a matched pair to the primary (fills `accent` on hover).
 - **Section label** — 4–6px solid `magenta` square + uppercase tracked `accent` text.
-- **Display headline** — Montserrat 300, clamp 40–64px, line-height ~1.0, color `navy`;
+- **Display headline** — Space Grotesk 300, clamp 40–64px, line-height ~1.0, color `navy`;
   optionally one word in solid `accent`.
 - **Card** — white surface, `line` hairline, 24px radius, 36px padding, flat (border →
   `accent` on hover, no shadow).
@@ -228,7 +228,7 @@ is the one angular motif; everything else is soft.
 
 **Do**
 - Lead with bg/surface/navy for ~99% of any surface; let solid `accent` be the rare highlight.
-- Set display headlines in Montserrat **300** at large sizes with ~1.0 line-height.
+- Set display headlines in Space Grotesk **300** at large sizes with ~1.0 line-height.
 - Prefix every section label with the 4px solid magenta square.
 - Keep rounding generous — 100px pills, 64px media, 24px cards.
 - Build hierarchy from tonal layers + spacing; stay flat and shadowless.

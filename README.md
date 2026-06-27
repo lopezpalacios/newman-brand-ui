@@ -34,7 +34,7 @@ Color-committee audited; every text/background pair passes WCAG AA (most AAA).
 - **One solid brand purple** `#621558` does all accent work (buttons, links, rules, stats). **No chrome gradients** — the navy→magenta gradient lives only inside the logo isotype.
 - **Navy `#191B4D`** anchors headlines + the single dark surfaces (nav pill, footer).
 - **Magenta `#B80E65`** survives only as the 4px section-label square.
-- **Whisper-light display** (Montserrat 300, ~1.0 line-height), **4px square labels**, **generous rounding** (pills 100px, portholes 64px, cards 24px), **flat & shadowless** tonal layering, 4px spacing rhythm.
+- **Whisper-light display** (Space Grotesk 300, ~1.0 line-height), **4px square labels**, **generous rounding** (pills 100px, portholes 64px, cards 24px), **flat & shadowless** tonal layering, 4px spacing rhythm.
 - **Accessibility:** skip link, `:focus-visible` rings, ARIA tabs/modal, `prefers-reduced-motion`.
 - Full token spec + contrast table: [`docs/DESIGN.md`](./docs/DESIGN.md).
 - **Math-curve loaders** — `.nm-loader[data-curve=rose|lissajous|hypotrochoid]`, parametric curves traced in solid accent (dependency-free, reduced-motion aware). Technique adapted from [math-curve-loaders](https://github.com/Paidax01/math-curve-loaders).

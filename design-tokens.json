@@ -26,7 +26,7 @@
   },
   "fontFamily": {
     "$type": "fontFamily",
-    "display": { "$value": "Montserrat, 'Arial Narrow', Arial, sans-serif" },
+    "display": { "$value": "Space Grotesk, 'Arial Narrow', Arial, sans-serif" },
     "body":    { "$value": "Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif" }
   },
   "fontWeight": {

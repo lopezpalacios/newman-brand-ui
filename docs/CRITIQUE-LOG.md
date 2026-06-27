@@ -149,3 +149,25 @@ necessity. Decide it, and this is as little design as it should be."
 **Next (Walter Landor):** "Products are made in the factory, brands are created in the mind." Is
 the mark consistent enough across every touchpoint to build the unconscious recognition that
 made Marlboro? Lock the rules that guarantee identical reproduction everywhere.
+
+---
+
+## Iteration 7 — Committee resolution: the typeface (client approved)
+**Mandate:** Rand, Vignelli, Scher and Rams independently named the same ceiling — **Montserrat**,
+the default geometric sans, was the one un-timeless, un-distinct choice holding Memorable and
+Distinct at 8. With client sign-off ("yes, swap the font"), the committee acted as one.
+
+**Shipped:** Display/headline/label type swapped **Montserrat → Space Grotesk** — a geometric
+grotesque with genuine character (the distinctive `g`, `a`, technical proportions) far closer to
+the wordmark's neo-grotesque cut, and not the LLM-default sans. Kept Inter for body. Trimmed the
+font payload to four weights (300/400/500/600). Synced across `newman.css` (`--display`),
+`index.html` (font load + specimens), `DESIGN.md`, `design-tokens.json`, `BRAND.md`, `AGENTS.md`,
+`README.md`, and the `/newman-ui` skill — one source of truth, no drift.
+
+**Self-score:** Reductive 9 · Memorable 9 · Scalable 9 · Mono+Inverted 9 · Distinct 9 ·
+Cross-cultural 9 · Timeless 9 · Systematic 10 · Flexible 10.  **Avg ≈ 9.2.**
+**Consensus:** "Now the type has a point of view that matches the mark. Nothing here reads as a
+template. This is iconic-grade — the remaining work is consistency lock-down, not aesthetics."
+
+**Next (Walter Landor):** lock reproduction/misuse rules so the recognition compounds — the last
+mile to Marlboro-level consistency.

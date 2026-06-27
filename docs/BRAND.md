@@ -30,7 +30,7 @@ Ratio: ~80% navy/black/white, magenta + gradient as accent. **Never tint body te
 **Never run the gradient under body text.**
 
 ## Type
-- **Display / headlines:** Montserrat — uppercase, wide tracking (0.04–0.5em), never < 12px.
+- **Display / headlines:** Space Grotesk — uppercase, wide tracking (0.04–0.5em), never < 12px.
 - **Body:** Inter — sentence case, default tracking.
 
 ## Graphic kit

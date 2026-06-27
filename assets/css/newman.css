@@ -33,7 +33,7 @@
   --logo-grad:linear-gradient(105deg,#191B4D,#3A1852,#981060,#B80E65);
 
   /* ---- type ---- */
-  --display:'Montserrat','Arial Narrow',Arial,sans-serif;
+  --display:'Space Grotesk','Arial Narrow',Arial,sans-serif;
   --body:'Inter',-apple-system,BlinkMacSystemFont,Arial,sans-serif;
   --text-label:12px;     --track-label:.14em;
   --text-body-sm:14px;
@@ -262,7 +262,7 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .app-poster.navy{background:var(--navy);color:#fff}
 .app-poster.accent{background:var(--accent);color:#fff}
 .app-poster.light{background:var(--bg-2);color:var(--navy);border:1px solid var(--line)}
-.app-poster .big{font-family:var(--display);font-weight:200;text-transform:uppercase;letter-spacing:.05em;font-size:clamp(30px,4.2vw,46px);line-height:.96}
+.app-poster .big{font-family:var(--display);font-weight:300;text-transform:uppercase;letter-spacing:.05em;font-size:clamp(30px,4.2vw,46px);line-height:.96}
 .app-poster .cap{font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
 .logo-motion{display:inline-flex}
 .logo-motion svg{width:150px;height:auto}
