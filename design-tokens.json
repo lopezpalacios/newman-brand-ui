@@ -1,0 +1,53 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "Newman v3 design tokens (W3C DTCG). Source of truth: docs/DESIGN.md. Mirrors assets/css/newman.css :root.",
+  "color": {
+    "$type": "color",
+    "bg":          { "$value": "#F6F4F9", "$description": "page canvas — warm lilac-white" },
+    "bg-2":        { "$value": "#ECE7F3", "$description": "tinted panel / band" },
+    "surface":     { "$value": "#FFFFFF", "$description": "cards, wells" },
+    "accent-tint": { "$value": "#F1E9F4", "$description": "hover/selected surface" },
+    "text":        { "$value": "#221A33", "$description": "primary text — deep aubergine (15:1 on bg)" },
+    "muted":       { "$value": "#5F5870", "$description": "secondary text (6.1:1)" },
+    "navy":        { "$value": "#191B4D", "$description": "headlines · nav pill · footer (dark anchor)" },
+    "accent":      { "$value": "#621558", "$description": "THE purple — buttons/links/rules/stats (white-on 11.9:1)" },
+    "accent-hover":{ "$value": "#4C1043", "$description": "button hover" },
+    "magenta":     { "$value": "#B80E65", "$description": "highlight only — the 4px label square" },
+    "magenta-ink": { "$value": "#8A0A4B", "$description": "contrast-safe magenta text (8.6:1)" },
+    "line":        { "$value": "#E4DEF1", "$description": "hairlines / borders" },
+    "on-dark":     { "$value": "#EDEAF4", "$description": "text on navy surfaces" }
+  },
+  "gradient": {
+    "$type": "gradient",
+    "logo-isotype": {
+      "$value": "linear-gradient(105deg, #191B4D, #3A1852, #981060, #B80E65)",
+      "$description": "USED ONLY inside the logo isotype SVG. Never a UI/chrome gradient."
+    }
+  },
+  "fontFamily": {
+    "$type": "fontFamily",
+    "display": { "$value": "Montserrat, 'Arial Narrow', Arial, sans-serif" },
+    "body":    { "$value": "Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif" }
+  },
+  "fontWeight": {
+    "$type": "fontWeight",
+    "light": { "$value": 300 }, "regular": { "$value": 400 }, "medium": { "$value": 500 }, "semibold": { "$value": 600 }
+  },
+  "dimension": {
+    "$type": "dimension",
+    "space-4": { "$value": "4px" }, "space-8": { "$value": "8px" }, "space-12": { "$value": "12px" },
+    "space-16": { "$value": "16px" }, "space-24": { "$value": "24px" }, "space-36": { "$value": "36px" },
+    "space-48": { "$value": "48px" }, "space-60": { "$value": "60px" }, "space-96": { "$value": "96px" }, "space-120": { "$value": "120px" },
+    "radius-sm": { "$value": "8px" }, "radius-input": { "$value": "12px" }, "radius-nav": { "$value": "16px" },
+    "radius-card": { "$value": "24px" }, "radius-media": { "$value": "64px" }, "radius-pill": { "$value": "100px" },
+    "maxw": { "$value": "1200px" }
+  },
+  "typography": {
+    "$type": "typography",
+    "display":    { "$value": { "fontFamily": "{fontFamily.display}", "fontWeight": 300, "fontSize": "clamp(40px,6vw,64px)", "lineHeight": 1.02, "letterSpacing": "0.01em" } },
+    "heading":    { "$value": { "fontFamily": "{fontFamily.display}", "fontWeight": 500, "fontSize": "32px", "lineHeight": 1.15 } },
+    "subheading": { "$value": { "fontFamily": "{fontFamily.display}", "fontWeight": 500, "fontSize": "22px", "lineHeight": 1.3 } },
+    "body":       { "$value": { "fontFamily": "{fontFamily.body}", "fontWeight": 400, "fontSize": "16px", "lineHeight": 1.6 } },
+    "label":      { "$value": { "fontFamily": "{fontFamily.display}", "fontWeight": 400, "fontSize": "12px", "lineHeight": 1.3, "letterSpacing": "0.14em" } }
+  }
+}

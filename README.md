@@ -16,7 +16,9 @@ assets/js/newman.js     # nav, ARIA tabs, focus-trap modal, toast, reveal, accor
 assets/img/             # logo SVG/PNG exports, og-image.jpg, icon-*.png
 favicon.* · apple-touch-icon.png · site.webmanifest
 docs/                   # brandbook.html · BRAND.md · DESIGN.md (Stitch format)
-prompts/                # reusable agent prompts (devibe-review.md)
+design-tokens.json      # machine-readable tokens (W3C DTCG) — mirrors DESIGN.md + :root
+AGENTS.md               # agent operating manual + hard invariants
+prompts/                # reusable review prompts: devibe-review.md · level-up-review.md
 .github/workflows/      # GitHub Pages deploy
 ```
 
