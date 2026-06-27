@@ -258,6 +258,17 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .app-tile{display:inline-grid;place-items:center;width:76px;height:76px;border-radius:20px;color:#fff}
 .app-tile.lg{width:112px;height:112px;border-radius:28px}
 .app-tile svg{width:58%;height:auto}
+/* delight (iter 10 · Sagmeister): the marks reward touch */
+.app-tile{transition:transform .22s cubic-bezier(.34,1.56,.64,1)}
+.app-tile:hover{transform:translateY(-5px) rotate(-3deg)}
+.logo-stage svg,.media,.nm-loader{transition:transform .25s ease}
+.logo-stage:hover svg{transform:scale(1.04)}
+.hero-mark{transition:opacity .4s ease,transform .4s ease}
+.hero:hover .hero-mark{opacity:.12;transform:scale(1.04) rotate(2deg)}
+@media (prefers-reduced-motion:reduce){
+  .app-tile,.logo-stage svg,.hero-mark{transition:none}
+  .app-tile:hover,.logo-stage:hover svg,.hero:hover .hero-mark{transform:none}
+}
 .dont-card{border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;background:var(--surface)}
 .dont-card .vis{height:118px;display:grid;place-items:center;background:var(--bg-2);overflow:hidden}
 .dont-card .vis svg{width:62px;height:auto;color:var(--accent)}

@@ -4,7 +4,7 @@ Running record of the `prompts/iconic-loop.md` loop. One legendary-designer pers
 iteration → one critique → one shipped improvement → self-score.
 
 **Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli → Paula Scher →
-Dieter Rams → Walter Landor → Michael Bierut → **Stefan Sagmeister (next)** → Lindon Leader → (repeat).
+Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → **Lindon Leader (next, then COMMITTEE CONVENE)** → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -220,3 +220,26 @@ spec describes is the icon the tokens emit. That coherence is what separates a b
 
 **Next (Stefan Sagmeister):** it's correct and coherent — but does it *move* anyone? Where is the
 emotion, the moment of delight that makes people love it, not just respect it?
+
+---
+
+## Iteration 10 — Stefan Sagmeister
+**Doctrine:** "Design that has the ability to touch the heart. Beauty is not a luxury; it makes
+things work better. If it doesn't move you, it isn't finished." (Talking Heads, AIGA, *The Happy Show*.)
+
+**Critique:** Nine iterations made the system *correct* and *coherent* — and a little cold. Every
+surface was inert; nothing rewarded the person using it. Respect without affection doesn't build
+the love that Apple/Coke command. The brand needed a heartbeat — a small, deliberate moment of joy.
+
+**Shipped:** **Moments of delight** — physics-eased hover micro-interactions: app-mark tiles lift
+and tilt, logo stages gently scale, the hero watermark warms and rotates on approach. All
+`prefers-reduced-motion` guarded (user-initiated, so it never fights accessibility). Documented as
+a principle: correctness alone never made anyone love a brand.
+
+**Self-score:** Reductive 9 · Memorable 9 · Scalable 9 · Mono+Inverted 9 · Distinct 9 ·
+Cross-cultural 9 · Timeless 9 · Systematic 10 · Flexible 10 · *(Emotion, new) 9*.  **Avg ≈ 9.3.**
+**Sagmeister's verdict:** "Now it breathes. It's correct AND it has a pulse — that's the difference
+between a logo people tolerate and one they reach for. I'm moved."
+
+**Next (Lindon Leader) — then COMMITTEE CONVENE:** the FedEx lesson — is there hidden ingenuity,
+a negative-space reward that makes people feel clever for noticing? Find the brand's "arrow."
