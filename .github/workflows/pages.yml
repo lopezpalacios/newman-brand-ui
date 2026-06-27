@@ -1,8 +1,9 @@
-name: Deploy to GitHub Pages
+name: CI & Deploy Pages
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -10,29 +11,46 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment, cancel in-progress runs of this workflow
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: HTML lint (index)
+        run: npx --yes htmlhint index.html
+
+      - name: Format check (json/md — advisory)
+        run: npx --yes prettier --check "**/*.{json,md}"
+        continue-on-error: true
+
+      - name: Link check (internal, offline)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--offline --no-progress './**/*.html' './**/*.md'"
+          fail: true
+
   deploy:
+    name: Deploy
+    needs: validate
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4

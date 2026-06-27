@@ -23,10 +23,10 @@
     </g>
   </g>
 
-  <text x="90" y="430" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="300" font-size="58" fill="#EDEAF4">Financing the new era of energy.</text>
-  <text x="90" y="478" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="300" font-size="26" fill="#B7B0C8">Solar generation &amp; behind-the-meter storage · Mexico &amp; LATAM</text>
+  <text x="90" y="430" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="300" font-size="58" fill="#EDEAF4">Brand Guidelines</text>
+  <text x="90" y="478" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="300" font-size="26" fill="#B7B0C8">Logo · Color · Typography · Spacing · Components</text>
 
   <rect x="90" y="556" width="1020" height="1" fill="#FFFFFF" opacity="0.14"/>
   <text x="90" y="596" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" letter-spacing="2" fill="#EDEAF4">newman.re</text>
-  <text x="1110" y="596" text-anchor="end" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" letter-spacing="4" fill="#B7B0C8">SHAPE THE FUTURE</text>
+  <text x="1110" y="596" text-anchor="end" font-family="'Helvetica Neue',Arial,sans-serif" font-size="22" letter-spacing="4" fill="#B7B0C8">DESIGN SYSTEM · V3</text>
 </svg>
