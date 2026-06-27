@@ -4,7 +4,7 @@ Running record of the `prompts/iconic-loop.md` loop. One legendary-designer pers
 iteration → one critique → one shipped improvement → self-score.
 
 **Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli → Paula Scher →
-Dieter Rams → **Walter Landor (next)** → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
+Dieter Rams → Walter Landor → **Michael Bierut (next)** → Stefan Sagmeister → Lindon Leader → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -171,3 +171,27 @@ template. This is iconic-grade — the remaining work is consistency lock-down, 
 
 **Next (Walter Landor):** lock reproduction/misuse rules so the recognition compounds — the last
 mile to Marlboro-level consistency.
+
+---
+
+## Iteration 8 — Walter Landor
+**Doctrine:** "Products are made in the factory, but brands are created in the mind." Recognition
+is built by relentless, identical repetition — so the rules that prevent corruption matter as
+much as the mark itself. (Marlboro chevron, Levi's, Bank of America.)
+
+**Critique:** A guideline that shows only correct usage leaves every wrong usage undefined — and
+undefined means someone will tilt it, stretch it, recolour it, drop-shadow it, or retype the
+wordmark, and the recognition that compounds value gets diluted. Every iconic system (Apple,
+NASA, Pepsi) ships an explicit *misuse* page. Newman's did not.
+
+**Shipped:** A **Misuse** block — six visual don'ts with ✕ markers: rotate/tilt, stretch/distort,
+recolour, gradient-isotype-on-dark (the camouflage trap), shadows/effects, and retype-the-wordmark.
+Each renders the real violation so it's unmistakable. New `.dont-card` component.
+
+**Self-score:** Reductive 9 · Memorable 9 · Scalable 9 · Mono+Inverted 9 · Distinct 9 ·
+Cross-cultural 9 · Timeless 9 · Systematic 10 · Flexible 10.  **Avg ≈ 9.2 (consistency now locked).**
+**Landor's verdict:** "Now the mark is protected from the people who'll use it. Consistency is the
+engine of recognition — this is how a mark gets into the mind and stays there."
+
+**Next (Michael Bierut):** does the whole system cohere as one voice across every page and asset,
+or are there seams? Audit for system-level coherence, not individual components.

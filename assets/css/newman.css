@@ -258,6 +258,11 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .app-tile{display:inline-grid;place-items:center;width:76px;height:76px;border-radius:20px;color:#fff}
 .app-tile.lg{width:112px;height:112px;border-radius:28px}
 .app-tile svg{width:58%;height:auto}
+.dont-card{border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;background:var(--surface)}
+.dont-card .vis{height:118px;display:grid;place-items:center;background:var(--bg-2);overflow:hidden}
+.dont-card .vis svg{width:62px;height:auto;color:var(--accent)}
+.dont-card .lbl{display:flex;align-items:center;gap:8px;padding:12px 16px;font-family:var(--display);font-weight:500;font-size:13px;color:var(--text)}
+.dont-card .x{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#b3382c;color:#fff;font-size:11px;flex:none}
 .app-poster{aspect-ratio:3/4;border-radius:var(--r-card);padding:24px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
 .app-poster.navy{background:var(--navy);color:#fff}
 .app-poster.accent{background:var(--accent);color:#fff}
