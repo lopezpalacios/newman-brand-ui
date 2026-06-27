@@ -1,0 +1,16 @@
+{
+  "name": "Newman — Soluciones en Energía",
+  "short_name": "Newman",
+  "description": "Financing and commercializing solar generation and behind-the-meter storage across Mexico and LATAM.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#F6F4F9",
+  "theme_color": "#191B4D",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "assets/img/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "assets/img/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "assets/img/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

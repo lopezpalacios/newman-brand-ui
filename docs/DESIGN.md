@@ -4,28 +4,28 @@ name: Newman
 description: >
   Newman · Soluciones en Energía. An energy platform financing and commercializing
   solar generation and behind-the-meter storage across Mexico and LATAM. Visual
-  language: a restrained, near-monochrome navy/ink/paper canvas where a single
-  navy→magenta gradient is the ~1% accent. Whisper-light Montserrat display type
-  feels architectural; the 5-bar solar-ray isotype and a 4px square label indicator
-  carry the brand. Flat and shadowless — hierarchy comes from tonal layering and
-  generous spacing, never elevation.
+  language (v3): a light, warm-lilac canvas with deep-aubergine text and ONE solid
+  brand purple (#621558) as accent — no chrome gradients. Navy carries headlines and
+  the single dark anchor (nav pill, footer). The navy→magenta gradient survives ONLY
+  inside the logo isotype (the registered mark). Whisper-light Montserrat display type
+  feels architectural; the 5-bar isotype and a 4px magenta square label carry the
+  brand. Flat and shadowless — hierarchy from tonal layering and spacing, never elevation.
 colors:
-  navy:        "#191B4D"
-  magenta:     "#B80E65"
-  magenta-ink: "#8A0A4B"
-  indigo:      "#211A4E"
-  plum:        "#3A1852"
-  grape:       "#621558"
-  berry:       "#981060"
-  ink:         "#0A0A0C"
-  onyx:        "#0F0E12"
-  graphite:    "#3A3A42"
-  grey:        "#74747F"
-  cloud:       "#B9B9C2"
-  line:        "#E7E7EA"
-  paper:       "#F5F5F4"
+  bg:          "#F6F4F9"   # page canvas — warm lilac-white
+  bg-2:        "#ECE7F3"   # tinted panel / band
+  surface:     "#FFFFFF"   # cards, wells
+  accent-tint: "#F1E9F4"   # hover/selected surface
+  text:        "#221A33"   # primary text — deep aubergine (15:1 on bg)
+  muted:       "#5F5870"   # secondary text (6.1:1)
+  navy:        "#191B4D"   # headlines + dark anchor (nav pill, footer)
+  accent:      "#621558"   # THE purple — buttons/links/rules/stats
+  accent-hover:"#4C1043"
+  magenta:     "#B80E65"   # highlight only — the 4px label square
+  magenta-ink: "#8A0A4B"   # contrast-safe magenta text, if ever needed
+  line:        "#E4DEF1"   # hairlines / borders
   white:       "#FFFFFF"
-  gradient:    "linear-gradient(105deg in oklch, #191B4D, #3A1852, #981060, #B80E65)"
+  on-dark:     "#EDEAF4"   # text on navy surfaces
+  logo-gradient: "linear-gradient(105deg, #191B4D, #3A1852, #981060, #B80E65)"  # SVG isotype ONLY
 typography:
   display:
     fontFamily: "Montserrat, 'Arial Narrow', Arial, sans-serif"
@@ -87,7 +87,7 @@ components:
     rounded: "{rounded.nav}"
     padding: "14px 24px"
   button-primary:
-    backgroundColor: "{colors.gradient}"
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.white}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.pill}"
@@ -121,9 +121,10 @@ components:
 
 Newman should feel like a **technical specification rendered as a brand** — precise,
 confident, bankable, and quietly optimistic about energy's future. The interface is
-**near-colorless by design**: a warm-neutral paper canvas, ink/navy typography, and a
-single navy→magenta gradient that appears only as a deliberate accent. Restraint is the
-point — every element earns its place through **scale, spacing, and shape**, not hue.
+**light and low-chroma by design**: a warm-lilac canvas, deep-aubergine/navy typography,
+and a single solid brand purple (`#621558`) as the deliberate accent — **no chrome
+gradients**. Restraint is the point — every element earns its place through **scale,
+spacing, and shape**, not hue.
 
 The personality is **visionary, solid, bold, human** (brandbook voice). Bilingual EN/ES,
 equally fluent. Lead with impact, back it with evidence; never hype, jargon, or
@@ -136,28 +137,30 @@ generous rounding and whisper-light type rather than amplifying it with bold sho
 
 ## Colors
 
-Two poles anchor everything — **Newman Navy** `#191B4D` and **Newman Magenta** `#B80E65`
-— bridged by the signature gradient. Black/white/navy/paper form the high-contrast canvas
-the brand lives on; magenta and the full gradient are the remaining ~1% accent.
+A light, purple-forward, **flat** system (v3). The canvas is warm lilac; text is deep
+aubergine; one solid brand purple (`#621558`) does all accent work. Navy anchors headlines
+and the single dark surface. All pairs pass WCAG AA (most AAA).
 
-| Token | Value | Role |
-|-------|-------|------|
-| `navy` | `#191B4D` | Primary. Gradient origin. Borders, headings on light, dark surfaces, the carbon tonal layer. |
-| `magenta` | `#B80E65` | Accent only. Gradient apex, focus ring, the 4px label square. **Never** body text or large fills. |
-| `magenta-ink` | `#8A0A4B` | The **only** magenta permitted as text on light — passes WCAG AA. Use for kickers/labels. |
-| `indigo` `plum` `grape` `berry` | `#211A4E` `#3A1852` `#621558` `#981060` | Internal gradient stops. Not used as flat fills. |
-| `ink` | `#0A0A0C` | Hero/nav-pill canvas, deepest interactive surface. |
-| `onyx` | `#0F0E12` | Footer terminator — the only full-width dark surface. |
-| `graphite` | `#3A3A42` | Body copy on light. |
-| `grey` | `#74747F` | Muted/secondary text, captions, disabled. |
-| `cloud` | `#B9B9C2` | Body copy on dark, hairline hover. |
-| `line` | `#E7E7EA` | Hairline borders, dividers, card edges. |
-| `paper` | `#F5F5F4` | **Page canvas** — the warm off-white that defines the surface. |
-| `white` | `#FFFFFF` | Elevated cards, wells above the paper canvas. |
+| Token | Value | Role | Contrast |
+|-------|-------|------|----------|
+| `bg` | `#F6F4F9` | **Page canvas** — warm lilac-white | — |
+| `bg-2` | `#ECE7F3` | Tinted panel / band (replaces old dark slabs) | — |
+| `surface` | `#FFFFFF` | Elevated cards, wells | — |
+| `accent-tint` | `#F1E9F4` | Hover/selected surface | — |
+| `text` | `#221A33` | Primary text — deep aubergine | 15:1 on bg |
+| `muted` | `#5F5870` | Secondary text | 6.1:1 |
+| `navy` | `#191B4D` | Headlines + nav pill + footer (single dark anchor) | 14.6:1 head |
+| `accent` | `#621558` | **The** purple — buttons/links/rules/stats | white-on 11.9:1 |
+| `accent-hover` | `#4C1043` | Button hover | 14.4:1 |
+| `magenta` | `#B80E65` | Highlight only — the 4px label square (graphic) | 5.8:1 |
+| `magenta-ink` | `#8A0A4B` | Contrast-safe magenta text, if ever needed | 8.6:1 |
+| `line` | `#E4DEF1` | Hairline borders, dividers, card edges | — |
+| `on-dark` | `#EDEAF4` | Text on navy surfaces | — |
 
-**Gradient:** `navy → magenta` only, never reversed, interpolated in **OKLCH** (sRGB
-fallback) to kill the muddy plum mid-band. Reserve it for: the brand bar, one hero word,
-the primary button, the isotype, the badge, and label squares. Nothing else.
+**Gradient policy:** there are **no UI/chrome gradients**. The navy→magenta gradient lives
+**only inside the logo isotype** (the registered mark, in SVG). Accent fills, bars, rules,
+stats, and the hero word are all the **solid** `accent`. This is deliberate — flat solid
+color reads as designed; gradient chrome reads as vibe-coded.
 
 ## Typography
 
@@ -191,7 +194,7 @@ top, not a full-width bar. No sidebar, no mega-menu, no sticky beyond the nav.
 ## Elevation & Depth
 
 **Deliberately shadowless.** All hierarchy is tonal layering —
-`paper → white → navy(carbon) → onyx` — plus generous spacing, never drop shadows. This
+`bg → bg-2 → surface(white) → navy` — plus generous spacing, never drop shadows. This
 keeps the interface flat, precise, and instrument-like. The only exceptions are transient
 overlays (modal, toast), which may carry a single soft shadow to lift off the page.
 
@@ -204,26 +207,26 @@ is the one angular motif; everything else is soft.
 
 ## Components
 
-- **Nav pill** — ink `#0A0A0C`, 16px radius, floats over paper; white links at 14px,
-  contrast alone separates it (no shadow). Isotype on the left.
-- **Primary button** — gradient fill, white 14px, 100px pill, no border/shadow. Highest
-  interactive weight; use sparingly (one per view).
-- **Ghost button** — transparent, 1.5px navy border, navy text, same 100px geometry — a
-  matched pair to the primary.
-- **Section label** — 4–6px solid magenta square + uppercase tracked `magenta-ink` text.
-- **Display headline** — Montserrat 300, clamp 40–64px, line-height ~1.0; optionally one
-  word in gradient text.
-- **Card** — white surface, `line` hairline, 24px radius, 36px padding, flat (border
-  darkens on hover, no shadow).
+- **Nav pill** — navy `#191B4D`, 16px radius, floats over the lilac canvas; white links +
+  white wordmark, gradient isotype; contrast alone separates it (no shadow).
+- **Primary button** — solid `accent` fill, white 14px, 100px pill; hover → `accent-hover`.
+  Highest interactive weight; use sparingly (one per view).
+- **Ghost button** — transparent, 1.5px `accent` border, `accent` text, same 100px geometry
+  — a matched pair to the primary (fills `accent` on hover).
+- **Section label** — 4–6px solid `magenta` square + uppercase tracked `accent` text.
+- **Display headline** — Montserrat 300, clamp 40–64px, line-height ~1.0, color `navy`;
+  optionally one word in solid `accent`.
+- **Card** — white surface, `line` hairline, 24px radius, 36px padding, flat (border →
+  `accent` on hover, no shadow).
 - **Media porthole** — full-bleed, 64px radius, no frame/scrim/caption-box.
-- **Accordion** — hairline rows; right-aligned 40px circular toggle (navy border, white
+- **Accordion** — hairline rows; right-aligned 40px circular toggle (`accent` border, white
   fill, `+`/`−`).
-- **Footer** — onyx `#0F0E12`, gradient-bar cap, the page's definitive terminator.
+- **Footer** — navy `#191B4D`, solid `accent` bar cap, the page's definitive terminator.
 
 ## Do's and Don'ts
 
 **Do**
-- Lead with paper/white/navy for ~99% of any surface; let the gradient be the rare accent.
+- Lead with bg/surface/navy for ~99% of any surface; let solid `accent` be the rare highlight.
 - Set display headlines in Montserrat **300** at large sizes with ~1.0 line-height.
 - Prefix every section label with the 4px solid magenta square.
 - Keep rounding generous — 100px pills, 64px media, 24px cards.
@@ -231,7 +234,7 @@ is the one angular motif; everything else is soft.
 - Use real industrial photography full-bleed at 64px radius when available.
 
 **Don't**
-- Don't run the gradient under body text, reverse it, add hues, or posterize it.
+- Don't add chrome gradients — the gradient belongs only inside the logo isotype.
 - Don't tint body text magenta — use `magenta-ink` for the small label accents only.
 - Don't use bold/semibold for display headlines — the whisper-weight is the whole point.
 - Don't add drop shadows to cards, buttons, or nav — flat tonal layering only.
