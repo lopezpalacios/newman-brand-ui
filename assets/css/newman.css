@@ -258,6 +258,12 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .app-tile{display:inline-grid;place-items:center;width:76px;height:76px;border-radius:20px;color:#fff}
 .app-tile.lg{width:112px;height:112px;border-radius:28px}
 .app-tile svg{width:58%;height:auto}
+.app-poster{aspect-ratio:3/4;border-radius:var(--r-card);padding:24px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.app-poster.navy{background:var(--navy);color:#fff}
+.app-poster.accent{background:var(--accent);color:#fff}
+.app-poster.light{background:var(--bg-2);color:var(--navy);border:1px solid var(--line)}
+.app-poster .big{font-family:var(--display);font-weight:200;text-transform:uppercase;letter-spacing:.05em;font-size:clamp(30px,4.2vw,46px);line-height:.96}
+.app-poster .cap{font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
 .logo-motion{display:inline-flex}
 .logo-motion svg{width:150px;height:auto}
 .logo-motion .bar{transform-box:fill-box;transform-origin:bottom;animation:nm-build 4s ease-in-out infinite}

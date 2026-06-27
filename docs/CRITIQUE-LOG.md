@@ -3,8 +3,8 @@
 Running record of the `prompts/iconic-loop.md` loop. One legendary-designer persona per
 iteration → one critique → one shipped improvement → self-score.
 
-**Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli →
-**Paula Scher (next)** → Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
+**Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli → Paula Scher →
+**Dieter Rams (next)** → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -102,3 +102,25 @@ decision (flagged for the client). Everything else is disciplined."
 
 **Next (Paula Scher):** is the wordmark doing enough? Type as image — could the identity be
 bolder, more typographically expressive, more ownable at environmental scale?
+
+---
+
+## Iteration 5 — Paula Scher
+**Doctrine:** "Type as image. Identity is environmental — it has to work on a building, a tote,
+a phone. Make it big, make it own the space." (Citi, Public Theater, Windows.)
+
+**Critique:** The guidelines proved the mark in the lab (grid, mono, motion) but never showed it
+*living* — no applications, no environmental scale, no type-as-image. A mark only becomes iconic
+once you see it big and repeated; without an applications page the identity feels theoretical.
+
+**Shipped:** An **Applications** section — three poster tiles (navy / accent / light) using big
+tracked-caps display ("New Era", "Shape the future", "+200 partners") with the mark, showing the
+identity from favicon to façade. New `.app-poster` component; type as the image.
+
+**Self-score:** Reductive 8 · Memorable 8 · Scalable 9 · Mono+Inverted 9 · Distinct 8 ·
+Cross-cultural 9 · Timeless 8 · Systematic 10 · Flexible 10.  **Avg ≈ 8.8.**
+**Scher's verdict:** "Now it lives. It owns space. The bones are iconic-grade. The only thing
+between this and Pepsi/Apple is conviction on the typeface — pick the timeless one and commit."
+
+**Next (Dieter Rams):** less, but better. Is anything decorative? Strip to only what's essential;
+will every element here still look right in 20 years?
