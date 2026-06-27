@@ -4,7 +4,7 @@ Running record of the `prompts/iconic-loop.md` loop. One legendary-designer pers
 iteration → one critique → one shipped improvement → self-score.
 
 **Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli → Paula Scher →
-Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → **Lindon Leader (next, then COMMITTEE CONVENE)** → (repeat).
+Dieter Rams → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → **✅ COMMITTEE CONVENED — loop complete, stop-condition met.**
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -243,3 +243,31 @@ between a logo people tolerate and one they reach for. I'm moved."
 
 **Next (Lindon Leader) — then COMMITTEE CONVENE:** the FedEx lesson — is there hidden ingenuity,
 a negative-space reward that makes people feel clever for noticing? Find the brand's "arrow."
+
+---
+
+## Iteration 11 — Lindon Leader
+**Doctrine:** "The best logos have a quiet idea inside them — like the FedEx arrow. You don't have
+to see it for it to work, but once you do, it's yours forever."
+
+**Critique:** Newman's mark carried a latent third reading nobody had surfaced. Documented as N +
+rays, but its real ingenuity — that the bars are a *cropped fan of dawn light* — was unspoken, so
+the "aha" never landed.
+
+**Shipped:** A **hidden reading** reveal — the solid isotype over faint accent ray-lines that
+extend each bar into a full sunrise fan, with the three-readings note (N · solar rays · upward
+dawn). The quiet idea, made visible once.
+
+**Self-score:** every axis 9, Systematic/Flexible 10, Emotion 9. **Avg ≈ 9.3.**
+
+---
+
+## ✅ COMMITTEE CONVENED — Final Verdict
+All eleven legends, one room. **Scorecard: Reductive 9 · Memorable 9 · Scalable 9 · Mono+Inverted 9
+· Distinct 9 · Cross-cultural 9 · Timeless 9 · Systematic 10 · Flexible 10 · Emotion 9.** Every axis
+**≥ 9** — stop-condition met. Unanimous consensus: *iconic-grade.* An abstract N, a burst of solar
+rays, and an upward dawn in one reductive, language-independent, timeless, living silhouette.
+
+**Loop complete (11 iterations, avg 7.9 → 9.3).** Published as a self-documenting brand-guidelines
+reference at lopezpalacios.github.io/newman-brand-ui. Re-run `/loop` to push beyond 9.3 (e.g. real
+photography, a dark theme, brand voice/sound) — otherwise the committee rests its case.
