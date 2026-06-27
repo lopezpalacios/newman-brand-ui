@@ -5,8 +5,8 @@ description: >
   Newman · Soluciones en Energía. An energy platform financing and commercializing
   solar generation and behind-the-meter storage across Mexico and LATAM. Visual
   language (v3): a light, warm-lilac canvas with deep-aubergine text and ONE solid
-  brand purple (#621558) as accent — no chrome gradients. Navy carries headlines and
-  the single dark anchor (nav pill, footer). The navy→magenta gradient survives ONLY
+  brand purple (#621558) as accent (also the floating nav pill) — no chrome gradients.
+  Navy carries headlines and the footer anchor. The navy→magenta gradient survives ONLY
   inside the logo isotype (the registered mark). Whisper-light Montserrat display type
   feels architectural; the 5-bar isotype and a 4px magenta square label carry the
   brand. Flat and shadowless — hierarchy from tonal layering and spacing, never elevation.
@@ -17,7 +17,7 @@ colors:
   accent-tint: "#F1E9F4"   # hover/selected surface
   text:        "#221A33"   # primary text — deep aubergine (15:1 on bg)
   muted:       "#5F5870"   # secondary text (6.1:1)
-  navy:        "#191B4D"   # headlines + dark anchor (nav pill, footer)
+  navy:        "#191B4D"   # headlines + footer anchor
   accent:      "#621558"   # THE purple — buttons/links/rules/stats
   accent-hover:"#4C1043"
   magenta:     "#B80E65"   # highlight only — the 4px label square
@@ -149,8 +149,8 @@ and the single dark surface. All pairs pass WCAG AA (most AAA).
 | `accent-tint` | `#F1E9F4` | Hover/selected surface | — |
 | `text` | `#221A33` | Primary text — deep aubergine | 15:1 on bg |
 | `muted` | `#5F5870` | Secondary text | 6.1:1 |
-| `navy` | `#191B4D` | Headlines + nav pill + footer (single dark anchor) | 14.6:1 head |
-| `accent` | `#621558` | **The** purple — buttons/links/rules/stats | white-on 11.9:1 |
+| `navy` | `#191B4D` | Headlines + footer (dark anchor) | 14.6:1 head |
+| `accent` | `#621558` | **The** purple — nav pill, buttons/links/rules/stats | white-on 11.9:1 |
 | `accent-hover` | `#4C1043` | Button hover | 14.4:1 |
 | `magenta` | `#B80E65` | Highlight only — the 4px label square (graphic) | 5.8:1 |
 | `magenta-ink` | `#8A0A4B` | Contrast-safe magenta text, if ever needed | 8.6:1 |
@@ -207,8 +207,9 @@ is the one angular motif; everything else is soft.
 
 ## Components
 
-- **Nav pill** — navy `#191B4D`, 16px radius, floats over the lilac canvas; white links +
-  white wordmark, gradient isotype; contrast alone separates it (no shadow).
+- **Nav pill** — accent `#621558`, 16px radius, floats over the lilac canvas; reversed
+  all-white logo + white links; CTA is a white pill with accent text. White-on-accent =
+  11.9:1; contrast alone separates it (no shadow).
 - **Primary button** — solid `accent` fill, white 14px, 100px pill; hover → `accent-hover`.
   Highest interactive weight; use sparingly (one per view).
 - **Ghost button** — transparent, 1.5px `accent` border, `accent` text, same 100px geometry

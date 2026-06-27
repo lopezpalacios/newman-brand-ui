@@ -19,7 +19,8 @@ If you change a token, change all three in the same commit, or you've introduced
   SVG. Bars, buttons, rules, text, badges, stats = solid `--accent` (`#621558`).
 - **Light, purple-forward, flat.** Canvas `--bg #F6F4F9`, text `--text #221A33`. No
   near-black surfaces. No drop shadows except modal/toast.
-- **Logo on dark = reversed all-white** lockup. The gradient isotype camouflages on navy.
+- **Logo on dark/colored = reversed all-white** lockup. The gradient isotype camouflages on
+  any dark surface (navy footer, accent `#621558` nav pill). The nav pill is `--accent`.
 - **Display headlines = Montserrat weight 300.** Never bold display.
 - **Magenta only as the 4px label square.** Never magenta body text (use `--magenta-ink`).
 - **Accessibility:** keep skip link, `:focus-visible` rings, ARIA on widgets,
