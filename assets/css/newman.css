@@ -101,18 +101,18 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .center{text-align:center}.center .section-rule{margin-inline:auto}.center p{margin-inline:auto}
 .split{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s-48);align-items:end}
 
-/* ---------- nav: floating navy pill ---------- */
+/* ---------- nav: floating LIGHT pill (logo reads, no camouflage) ---------- */
 .nav{position:sticky;top:var(--s-16);z-index:50;margin-inline:auto;max-width:var(--maxw);padding-inline:clamp(12px,3vw,20px);transition:transform .3s}
 .nav.hidden{transform:translateY(-140%)}
-.nav .row{display:flex;align-items:center;justify-content:space-between;gap:var(--s-24);background:var(--navy);border-radius:var(--r-nav);padding:14px clamp(16px,3vw,24px)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;gap:var(--s-24);background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:var(--r-nav);padding:12px clamp(16px,3vw,24px)}
 .nav .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .nav .brand svg{height:22px;width:auto}
-.nav .brand .word{fill:#fff}
+.nav .brand .word{fill:var(--navy)}        /* navy wordmark on light pill — gradient isotype reads */
 .nav .links{display:flex;align-items:center;gap:var(--s-24)}
-.nav .links a{font-family:var(--display);font-size:var(--text-body-sm);font-weight:var(--w-reg);letter-spacing:.02em;text-decoration:none;color:#fff;opacity:.82;transition:opacity .15s}
+.nav .links a{font-family:var(--display);font-size:var(--text-body-sm);font-weight:var(--w-reg);letter-spacing:.02em;text-decoration:none;color:var(--navy);opacity:.7;transition:opacity .15s}
 .nav .links a:hover,.nav .links a[aria-current="page"]{opacity:1}
-.nav .links a.btn{opacity:1}
-.nav .burger{display:none;background:none;border:0;cursor:pointer;font-size:22px;line-height:1;color:#fff}
+.nav .links a.btn{opacity:1;color:#fff}
+.nav .burger{display:none;background:none;border:0;cursor:pointer;font-size:22px;line-height:1;color:var(--navy)}
 
 /* ---------- hero: light, airy, bottom-left headline ---------- */
 .hero{position:relative;overflow:hidden;background:var(--bg-2)}
@@ -224,11 +224,54 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 [data-reveal]:nth-child(3){transition-delay:.14s}
 [data-reveal]:nth-child(4){transition-delay:.21s}
 
+/* ============================================================
+   STYLEGUIDE — building blocks for the brand-guidelines page
+   ============================================================ */
+.sg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:var(--s-16)}
+.sw{border:1px solid var(--line);border-radius:var(--r-sm);overflow:hidden;background:var(--surface)}
+.sw .chip{height:92px;border-bottom:1px solid var(--line)}
+.sw .meta{padding:12px 14px}
+.sw .nm{font-family:var(--display);font-weight:var(--w-med);font-size:14px;color:var(--text)}
+.sw .hex{font-size:12px;color:var(--muted);margin-top:3px;text-transform:uppercase;letter-spacing:.04em}
+.sw .role{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.4}
+.sw .wcag{display:inline-block;font-family:var(--display);font-size:10px;font-weight:var(--w-med);letter-spacing:.06em;color:#1f7a57;margin-top:8px}
+
+.logo-stage{display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:var(--r-card);padding:clamp(30px,5vw,56px);background:var(--surface)}
+.logo-stage.on-dark{background:var(--navy);border-color:var(--navy)}
+.logo-stage.on-tint{background:var(--bg-2)}
+.logo-stage svg{width:100%;max-width:360px;height:auto}
+.logo-stage.iso svg{max-width:120px}
+.clearspace{position:relative;border:1px dashed var(--line);border-radius:var(--r-card);padding:clamp(40px,7vw,72px);background:var(--bg-2);display:flex;justify-content:center}
+.clearspace svg{width:300px;max-width:100%}
+
+.specimen{border-bottom:1px solid var(--line);padding:18px 0;display:flex;gap:var(--s-24);align-items:baseline;flex-wrap:wrap}
+.specimen .tag{width:150px;flex:none;font-family:var(--display);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.specimen .sample{flex:1;min-width:200px;color:var(--text)}
+
+.scale-row{display:flex;align-items:center;gap:var(--s-16);margin-bottom:var(--s-8)}
+.scale-row .tok{width:90px;flex:none;font-size:12px;color:var(--muted);font-family:var(--display)}
+.scale-row .bar{height:14px;background:var(--accent);border-radius:2px}
+.radius-demo{display:flex;gap:var(--s-16);flex-wrap:wrap}
+.radius-demo .r{width:96px;height:96px;background:var(--bg-2);border:1px solid var(--line);display:grid;place-items:end center;padding:8px;font-size:11px;color:var(--muted);font-family:var(--display)}
+
+.dodont{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-24)}
+.dodont .col{border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s-24);background:var(--surface)}
+.dodont h4{font-family:var(--display);font-size:14px;font-weight:var(--w-med);margin-bottom:var(--s-12);letter-spacing:.06em;text-transform:uppercase}
+.dodont h4.do{color:#1f7a57}.dodont h4.dont{color:#b3382c}
+.dodont ul{list-style:none}
+.dodont li{font-size:14px;color:var(--muted);margin-bottom:10px;padding-left:18px;position:relative}
+.dodont li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%}
+.dodont .do li::before{background:#1f7a57}.dodont .dont li::before{background:#b3382c}
+
+.demo-row{display:flex;gap:var(--s-16);flex-wrap:wrap;align-items:center}
+.token-list{font-family:var(--display);font-size:13px;color:var(--muted)}
+@media (max-width:860px){.dodont{grid-template-columns:1fr}.specimen .tag{width:100%}}
+
 /* ---------- responsive ---------- */
 @media (max-width:860px){
   .grid-2,.grid-3,.grid-4,.stats,.split{grid-template-columns:1fr}
   .split{gap:var(--s-16);align-items:start}
-  .nav .links{position:absolute;top:100%;left:0;right:0;margin-top:var(--s-8);flex-direction:column;align-items:flex-start;gap:0;background:var(--navy);border-radius:var(--r-nav);padding:var(--s-8) 0;display:none}
+  .nav .links{position:absolute;top:100%;left:0;right:0;margin-top:var(--s-8);flex-direction:column;align-items:flex-start;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-nav);padding:var(--s-8) 0;display:none}
   .nav.open .links{display:flex}
   .nav .links a{padding:14px clamp(20px,5vw,24px);width:100%;opacity:1}
   .nav .burger{display:block}
