@@ -4,7 +4,7 @@ Running record of the `prompts/iconic-loop.md` loop. One legendary-designer pers
 iteration → one critique → one shipped improvement → self-score.
 
 **Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli → Paula Scher →
-Dieter Rams → Walter Landor → **Michael Bierut (next)** → Stefan Sagmeister → Lindon Leader → (repeat).
+Dieter Rams → Walter Landor → Michael Bierut → **Stefan Sagmeister (next)** → Lindon Leader → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -195,3 +195,28 @@ engine of recognition — this is how a mark gets into the mind and stays there.
 
 **Next (Michael Bierut):** does the whole system cohere as one voice across every page and asset,
 or are there seams? Audit for system-level coherence, not individual components.
+
+---
+
+## Iteration 9 — Michael Bierut
+**Doctrine:** "Design is about telling a coherent story across everything. A brand isn't a logo;
+it's a system that holds together — every touchpoint in one voice." (Pentagram; Saks, MIT Media Lab.)
+
+**Critique:** Two seams broke the one-voice rule. (1) The **shipped favicon** was the gradient
+isotype on white, but the documented canonical **app-mark** (iter 2) is the reversed white isotype
+on accent — the brand contradicted itself between its spec and its actual icon. (2) The machine
+spec `DESIGN.md` `components:` block referenced **dead tokens** (`{colors.ink/graphite/onyx/cloud}`)
+left over from v1/v2 — a tooling consumer would resolve them to nothing.
+
+**Shipped:** Regenerated **favicon / apple-touch / icon-192·512 / favicon.ico** as the canonical
+white-isotype-on-accent squircle (now identical to the app-mark and the manifest theme). Repaired
+every dead token ref in `DESIGN.md` to real v3 tokens (nav→accent, card→surface/muted,
+footer→navy/on-dark, labels/accordion→accent). One mark, one token graph, everywhere.
+
+**Self-score:** Reductive 9 · Memorable 9 · Scalable 9 · Mono+Inverted 9 · Distinct 9 ·
+Cross-cultural 9 · Timeless 9 · Systematic 10 · Flexible 10.  **Avg ≈ 9.3 (seams closed).**
+**Bierut's verdict:** "Now it's one system telling one story — the icon you see is the icon the
+spec describes is the icon the tokens emit. That coherence is what separates a brand from a logo."
+
+**Next (Stefan Sagmeister):** it's correct and coherent — but does it *move* anyone? Where is the
+emotion, the moment of delight that makes people love it, not just respect it?

@@ -82,7 +82,7 @@ spacing:
   120: "120px"
 components:
   nav:
-    backgroundColor: "{colors.ink}"
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.white}"
     rounded: "{rounded.nav}"
     padding: "14px 24px"
@@ -98,23 +98,23 @@ components:
     rounded: "{rounded.pill}"
     padding: "14px 26px"
   card:
-    backgroundColor: "{colors.white}"
-    textColor: "{colors.graphite}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.muted}"
     rounded: "{rounded.card}"
     padding: "{spacing.36}"
   section-label:
-    textColor: "{colors.magenta-ink}"
+    textColor: "{colors.accent}"
     typography: "{typography.label}"
   media:
     rounded: "{rounded.media}"
   accordion-toggle:
-    backgroundColor: "{colors.white}"
-    textColor: "{colors.navy}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.accent}"
     rounded: "{rounded.pill}"
     size: "40px"
   footer:
-    backgroundColor: "{colors.onyx}"
-    textColor: "{colors.cloud}"
+    backgroundColor: "{colors.navy}"
+    textColor: "{colors.on-dark}"
 ---
 
 ## Overview
