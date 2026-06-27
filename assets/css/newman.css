@@ -255,6 +255,9 @@ p{color:var(--muted);max-width:64ch;font-size:var(--text-body)}
 .logo-stage.on-tint{background:var(--bg-2)}
 .logo-stage svg{width:100%;max-width:360px;height:auto}
 .logo-stage.iso svg{max-width:120px}
+.app-tile{display:inline-grid;place-items:center;width:76px;height:76px;border-radius:20px;color:#fff}
+.app-tile.lg{width:112px;height:112px;border-radius:28px}
+.app-tile svg{width:58%;height:auto}
 .clearspace{position:relative;border:1px dashed var(--line);border-radius:var(--r-card);padding:clamp(40px,7vw,72px);background:var(--bg-2);display:flex;justify-content:center}
 .clearspace svg{width:300px;max-width:100%}
 
