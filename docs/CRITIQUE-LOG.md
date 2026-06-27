@@ -4,7 +4,7 @@ Running record of the `prompts/iconic-loop.md` loop. One legendary-designer pers
 iteration → one critique → one shipped improvement → self-score.
 
 **Persona rotation:** Paul Rand → Rob Janoff → Saul Bass → Massimo Vignelli → Paula Scher →
-**Dieter Rams (next)** → Walter Landor → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
+Dieter Rams → **Walter Landor (next)** → Michael Bierut → Stefan Sagmeister → Lindon Leader → (repeat).
 
 **Iconicity axes (/10):** Reductive · Memorable · Scalable · Mono+Inverted · Distinct ·
 Cross-cultural · Timeless · Systematic · Flexible.
@@ -124,3 +124,28 @@ between this and Pepsi/Apple is conviction on the typeface — pick the timeless
 
 **Next (Dieter Rams):** less, but better. Is anything decorative? Strip to only what's essential;
 will every element here still look right in 20 years?
+
+---
+
+## Iteration 6 — Dieter Rams
+**Doctrine:** "Good design is as little design as possible. Less, but better — back to purity,
+back to simplicity." Weniger, aber besser.
+
+**Critique:** The loaders showcase had drifted into decoration — four math curves (rose,
+Lissajous, hypotrochoid, navy/sm), three of which carry no brand meaning. A loader is not a
+maths gallery; only the rose (an 8-point bloom) relates to the isotype's rays. Showing four was
+ornament, not design — exactly the indulgence Rams strips.
+
+**Shipped:** Reduced the loader to **one canonical mark** — the solar-burst rose, in three sizes
+— and stated the rule: the kit ships other curves, the brand uses only this one. Removed the
+off-brand Lissajous/hypotrochoid tiles. Less surface, clearer intent.
+
+**Self-score:** Reductive 9 · Memorable 8 · Scalable 9 · Mono+Inverted 9 · Distinct 8 ·
+Cross-cultural 9 · Timeless 9 · Systematic 10 · Flexible 10.  **Avg ≈ 9.0.**
+**Rams's verdict:** "Better. One loader, one meaning. Timeless improved because there is less to
+date. The lingering non-essential is still the typeface — Montserrat is a choice of fashion, not
+necessity. Decide it, and this is as little design as it should be."
+
+**Next (Walter Landor):** "Products are made in the factory, brands are created in the mind." Is
+the mark consistent enough across every touchpoint to build the unconscious recognition that
+made Marlboro? Lock the rules that guarantee identical reproduction everywhere.
