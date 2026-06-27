@@ -37,6 +37,7 @@ Color-committee audited; every text/background pair passes WCAG AA (most AAA).
 - **Whisper-light display** (Montserrat 300, ~1.0 line-height), **4px square labels**, **generous rounding** (pills 100px, portholes 64px, cards 24px), **flat & shadowless** tonal layering, 4px spacing rhythm.
 - **Accessibility:** skip link, `:focus-visible` rings, ARIA tabs/modal, `prefers-reduced-motion`.
 - Full token spec + contrast table: [`docs/DESIGN.md`](./docs/DESIGN.md).
+- **Math-curve loaders** — `.nm-loader[data-curve=rose|lissajous|hypotrochoid]`, parametric curves traced in solid accent (dependency-free, reduced-motion aware). Technique adapted from [math-curve-loaders](https://github.com/Paidax01/math-curve-loaders).
 
 ## Brand assets
 `favicon.svg`, `favicon.ico` (16/32/48/64), `apple-touch-icon.png` (180), `site.webmanifest`

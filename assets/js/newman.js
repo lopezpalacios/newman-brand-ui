@@ -138,9 +138,45 @@
     return ok;
   }
 
+  /* ---- math-curve logo loaders ----
+     Parametric curves sampled into an SVG path, animated via stroke-dash + spin.
+     Technique adapted from github.com/Paidax01/math-curve-loaders (dependency-free). */
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  function curvePath(type, n = 240, R = 46, cx = 60, cy = 60){
+    const pts = [];
+    for(let i = 0; i <= n; i++){
+      const t = (i / n) * Math.PI * 2; let x, y;
+      if(type === 'lissajous'){            // a=3,b=2 — echoes the diagonal rays
+        x = R * Math.sin(3*t + Math.PI/2); y = R * Math.sin(2*t);
+      } else if(type === 'hypotrochoid'){  // spirograph
+        const Rr = 5, r = 3, d = 5, k = Rr - r, s = R / (k + d);
+        x = s * (k*Math.cos(t) + d*Math.cos((k/r)*t));
+        y = s * (k*Math.sin(t) - d*Math.sin((k/r)*t));
+      } else {                             // rose r=cos(kθ), k=4 → 8 petals (solar burst)
+        const rr = Math.cos(4*t);
+        x = R * rr * Math.cos(t); y = R * rr * Math.sin(t);
+      }
+      pts.push((cx + x).toFixed(2) + ',' + (cy + y).toFixed(2));
+    }
+    return 'M' + pts.join(' L') + 'Z';
+  }
+  function initLoaders(root = document){
+    root.querySelectorAll('.nm-loader').forEach(el => {
+      if(el.querySelector('svg')) return;
+      const svg = document.createElementNS(SVG_NS, 'svg');
+      svg.setAttribute('viewBox', '0 0 120 120'); svg.setAttribute('aria-hidden', 'true');
+      const p = document.createElementNS(SVG_NS, 'path');
+      p.setAttribute('class', 'curve');
+      p.setAttribute('d', curvePath(el.dataset.curve || 'rose'));
+      p.setAttribute('pathLength', '1');
+      svg.appendChild(p); el.appendChild(svg);
+      if(!el.hasAttribute('role')){ el.setAttribute('role', 'status'); el.setAttribute('aria-label', 'Loading'); }
+    });
+  }
+
   /* ---- boot ---- */
   addEventListener('DOMContentLoaded', () => {
-    initNav(); initTabs(); initModals(); initReveal(); initAccordion(); initStats();
+    initNav(); initTabs(); initModals(); initReveal(); initAccordion(); initStats(); initLoaders();
     document.querySelectorAll('form[data-validate]').forEach(f => f.addEventListener('submit', e => {
       if(!validateForm(f)){ e.preventDefault(); toast('Check the highlighted fields','error'); }
       else { e.preventDefault(); toast('Sent — we\'ll be in touch','success'); f.reset(); }
@@ -148,5 +184,5 @@
   });
 
   // expose
-  window.Newman = { toast, openModal, countUp, validateForm };
+  window.Newman = { toast, openModal, countUp, validateForm, initLoaders, curvePath };
 })();
